@@ -8,6 +8,10 @@ Welcome to Git and GitHub! This course provides a comprehensive guide to masteri
 ### Introduction to Git and Version Control
 Learn the basics of version control and discover why Git is the most popular tool for collaborative development.
 
+### GitHub Profile README Generator
+
+  https://rahuldkjain.github.io/gh-profile-readme-generator/
+
 ### Installing and Configuring Git
 Follow a step-by-step guide to installing Git on various platforms and configuring it for your projects.
 

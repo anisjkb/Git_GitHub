@@ -1,0 +1,105 @@
+Downloading Git and Configuration
+
+
+Download link:
+
+- https://git-scm.com/downloads/win
+
+Install Git:
+	
+Click Install and follow as usual process until following
+
+	Adjusting the name of the initial branch in new repositories What would you like Git to name the initial branch after "git init"?
+	Select "Override the default branch name for new repositories" after few as usual steps
+
+Click next>next>>>>next>Done
+
+i) Search "Git Bash" from "Search Option" of start menu
+ii) Open "Git Bash" and type "git --version" press enter. It will show "git version 2.47.1.windows..."
+
+User@DESKTOP-VI2MRGR MINGW64 ~
+$ git --version
+git version 2.47.1.windows.2
+
+Configure Git:
+
+	Git offers various configuration ways to manage your settings. Here are the main types:
+
+	System-level Configuration: 
+
+		This is applied across the entire system and is stored in the Git installation directory, 
+		usually found at /etc/gitconfig on Linux or C:\Program Files\Git\etc\gitconfig on Windows. 
+		You can edit this file directly or use the following command:
+
+sh
+git config --system <key> <value>
+Global-level Configuration: This applies to an individual user and is stored in the user's home directory (~/.gitconfig on Linux and C:\Users\<username>\.gitconfig on Windows). To set a global configuration, you can use:
+
+sh
+git config --global <key> <value>
+Local-level Configuration: This is specific to a single repository. The settings are stored in the repository's .git/config file. To set a local configuration, use:
+
+sh
+git config --local <key> <value>
+Environment Variables: These can override configurations. Git looks for environment variables starting with GIT_ (like GIT_COMMITTER_NAME, GIT_AUTHOR_EMAIL, etc.).
+
+Here's an example of setting a global username and email:
+
+sh
+git config --global user.name "Your git hub user Name"
+Exampli-
+$ git config --global user.name "anisjkb"
+
+git config --global user.email "git hub email id"
+
+
+Check configuration:
+
+User@DESKTOP-VI2MRGR MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=main
+user.name=anisjkb
+user.email=anisjkb@gmail.com
+
+
+
+
+Git Command:
+
+	git init
+
+		-Initializes a new Git repository in the current directory.
+
+	git add.
+		-Stages all changes (new files, modified files) in the current directory for the next commit.
+
+	git commit -m "first commit"
+
+		-Creates a commit with the staged changes and adds a message (ex: "first") describing the commit.
+
+	git status
+		-Shows the current status of the repository. It lists files that have been modified, added, or staged but not yet committed.
+
+	git remote add origin https://
+		-Links the local repository to a remote repository (e.g., on GitHub or GitLab) by providing its URL.
+
+	git log
+		-Displays a log of all commits made to the repository.
+
+Git Ignore:
+
+	.gitignore file is used in a git repository to ignore the files and directories which are unnecessary to project this will be ignored by the git 	once the changes as been committed to the Remote repository.
+

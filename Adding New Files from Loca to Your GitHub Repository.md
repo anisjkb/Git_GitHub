@@ -1,0 +1,77 @@
+# Adding New Files to Your GitHub Repository
+
+## Step 1: Navigate to Your Local Directory
+Open your terminal or command prompt and move to the directory containing your local repository using the `cd` command.
+
+```bash
+cd "E:\Data Science\Git_GitHub"
+```
+
+## Step 2: Check Git Initialization
+If your local directory is not already a Git repository, initialize it using the `git init` command:
+
+```bash
+git init
+```
+
+## Step 3: Add the Remote Repository
+Link your local repository to the existing GitHub repository using the `git remote add` command. If the remote repository is already added, skip this step.
+
+```bash
+git remote add origin https://github.com/anisjkb/Git_GitHub.git
+```
+
+## Step 4: Add Specific Files to the Staging Area
+Use the `git add` command followed by the filenames to add only the new files to the staging area.
+
+```bash
+git add file1.txt file2.txt file3.txt
+```
+
+**<span style='color:red'>Alternatively, if you want to add all new and modified files, use:</span>**
+
+```bash
+git add .
+```
+
+## Step 5: Commit the Changes
+Commit the added files with a meaningful message using the `git commit` command:
+
+```bash
+git commit -m "Added all new files"
+```
+
+## Step 6: Push the Changes to GitHub
+Push the committed changes to the GitHub repository using the `git push` command:
+
+```bash
+git push origin main
+```
+
+## Summary
+1. Navigate to your local directory:
+   ```bash
+   cd "E:\Data Science\Git_GitHub"
+   ```
+2. Initialize the local directory (if needed):
+   ```bash
+   git init
+   ```
+3. Add the remote repository:
+   ```bash
+   git remote add origin https://github.com/anisjkb/Git_GitHub.git
+   ```
+4. Add the new files:
+   ```bash
+   git add file1.txt file2.txt file3.txt
+   ```
+5. Commit the changes:
+   ```bash
+   git commit -m "Added three new files: file1.txt, file2.txt, file3.txt"
+   ```
+6. Push the changes:
+   ```bash
+   git push origin main
+   ```
+
+Now, your three new files are successfully added to your GitHub repository!

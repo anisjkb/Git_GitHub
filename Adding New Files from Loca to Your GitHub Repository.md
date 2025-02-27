@@ -1,5 +1,38 @@
 # Adding New Files to Your GitHub Repository
 
+**<span style='color:red'>If you want to add all new and modified files, use following steps:</span>**
+
+## Step 1: Check Git Initialization
+If your local directory is not already a Git repository, initialize it using the `git init` command:
+
+```bash
+git init
+```
+## Step 2: Add Files to the Staging Area
+Use the `git add` command to the staging area.
+
+```bash
+git add .
+```
+
+## Step 3: Commit the Changes
+Commit the added files with a meaningful message using the `git commit` command:
+
+```bash
+git commit -m "Added all new files"
+```
+
+## Step 4: Push the Changes to GitHub
+Push the committed changes to the GitHub repository using the `git push` command:
+
+```bash
+git push origin main
+```
+
+**<span style='color:green'>Now, your all new and modified files are successfully added to your GitHub repository!</span>**
+
+# Adding only specific files to Your GitHub Repository
+
 ## Step 1: Navigate to Your Local Directory
 Open your terminal or command prompt and move to the directory containing your local repository using the `cd` command.
 
@@ -14,7 +47,7 @@ If your local directory is not already a Git repository, initialize it using the
 git init
 ```
 
-## Step 3: Add the Remote Repository
+## Step 3: Add the Remote Repository (This steps is optional if "GitHub repository not exist")
 Link your local repository to the existing GitHub repository using the `git remote add` command. If the remote repository is already added, skip this step.
 
 ```bash
@@ -27,18 +60,11 @@ Use the `git add` command followed by the filenames to add only the new files to
 ```bash
 git add file1.txt file2.txt file3.txt
 ```
-
-**<span style='color:red'>Alternatively, if you want to add all new and modified files, use:</span>**
-
-```bash
-git add .
-```
-
 ## Step 5: Commit the Changes
 Commit the added files with a meaningful message using the `git commit` command:
 
 ```bash
-git commit -m "Added all new files"
+git commit -m "Added three new files: file1.txt, file2.txt, file3.txt"
 ```
 
 ## Step 6: Push the Changes to GitHub
@@ -46,32 +72,3 @@ Push the committed changes to the GitHub repository using the `git push` command
 
 ```bash
 git push origin main
-```
-
-## Summary
-1. Navigate to your local directory:
-   ```bash
-   cd "E:\Data Science\Git_GitHub"
-   ```
-2. Initialize the local directory (if needed):
-   ```bash
-   git init
-   ```
-3. Add the remote repository:
-   ```bash
-   git remote add origin https://github.com/anisjkb/Git_GitHub.git
-   ```
-4. Add the new files:
-   ```bash
-   git add file1.txt file2.txt file3.txt
-   ```
-5. Commit the changes:
-   ```bash
-   git commit -m "Added three new files: file1.txt, file2.txt, file3.txt"
-   ```
-6. Push the changes:
-   ```bash
-   git push origin main
-   ```
-
-Now, your three new files are successfully added to your GitHub repository!
